@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Castillo - Detalles del Producto</title>
+    <link rel="stylesheet" href="./styles2.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Cofee fussu</div>
+            <div class="menu-items">
+                <a href="index.html">Inicio</a>
+                <a href="index.html#products">Products</a>
+                <a href="index.html#sobre-nosotros">Sobre nosotros</a>
+                <a href="index.html#contacto">Contacto</a>
+            </div>
+            <button class="cart-icon" aria-label="Ver carrito">🛒</button>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Café Castillo</h1>
+        <img src="/placeholder.svg?height=400&width=400" alt="Café Castillo" class="product-image">
+        <p>El Café Castillo es una variedad colombiana conocida por su resistencia a la roya y su sabor equilibrado. Ofrece notas de chocolate, caramelo y un toque de frutas cítricas.</p>
+        <p class="price">Precio: $15.49</p>
+        <h2>Características:</h2>
+        <ul>
+            <li>Origen: Colombia</li>
+            <li>Altitud: 1,200 - 1,800 metros sobre el nivel del mar</li>
+            <li>Proceso: Lavado</li>
+            <li>Tostado: Medio</li>
+            <li>Notas de sabor: Chocolate, caramelo, cítricos</li>
+        </ul>
+        <button class="btn add-to-cart" data-id="6" data-name="Café Castillo" data-price="15.49">Añadir al carrito</button>
+        <a href="index.html" class="btn">Volver a la tienda</a>
+    </main>
+
+    <div class="cart-modal">
+        <h2>Carrito de Compras</h2>
+        <div class="cart-items"></div>
+        <p>Total: $<span class="cart-total">0.00</span></p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
