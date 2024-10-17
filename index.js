@@ -59,3 +59,30 @@ function updateCartDisplay() {
         });
     });
 }
+const restify = require('restify');
+const { BotFrameworkAdapter } = require('botbuilder');
+
+const server = restify.createServer();
+server.listen(process.env.port || process.env.PORT || 3978, function() {
+   console.log(`${server.name} listening to ${server.url}`);
+});
+
+const adapter = new BotFrameworkAdapter({
+   appId: process.env.MicrosoftAppId,
+   appPassword: process.env.MicrosoftAppPassword
+});
+
+const onTurnErrorHandler = async (context, error) => {
+   console.error(`\n [onTurnError] unhandled error: ${error}`);
+   await context.sendActivity('Oops. Algo salió mal!');
+};
+
+adapter.onTurnError = onTurnErrorHandler;
+
+server.post('/api/messages', (req, res) => {
+   adapter.processActivity(req, res, async (context) => {
+      if (context.activity.type === 'message') {
+         await context.sendActivity(`Dijiste: ${context.activity.text}`);
+      }
+   });
+});

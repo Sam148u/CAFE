@@ -46,19 +46,7 @@ nav a {
     font-size: 1.5rem;
     cursor: pointer;
 }
-.hero {
-    grid-column: 1 / 6;
-    position: relative;
-    overflow: hidden;
-    background-image: url(./images/imagen_2024-08-07_194157797.webp);
-    background-position: center;
-    padding: 100px;
-    background-size: cover; 
-    height: 400px;
-    font-size: large;
-    text-align: left;
-    border-radius: 5px;
-}
+
 .hero-text {
     position: absolute;
     top: 50%;
