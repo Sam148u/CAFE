@@ -48,9 +48,76 @@ h1 {
     margin-bottom: 1rem;
 }
 .product-image {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 1rem;
+    background-image: url(images/gourme.jpeg);
+    position: relative;
+    overflow: hidden;
+    background-position: center;
+    padding: 300px;
+    background-size:contain; 
+    height: 500px;
+    font-size: large;
+    text-align: left;
+    border-radius: 5px;
+}
+.clasico {
+    background-image: url(images/clasico.jpeg);
+    position: relative;
+    overflow: hidden;
+    background-position: center;
+    padding: 300px;
+    background-size:contain; 
+    height: 500px;
+    font-size: large;
+    text-align: left;
+    border-radius: 5px;
+}
+.supremo {
+    background-image: url(images/morasurco-suprema-molido.jpg);
+    position: relative;
+    overflow: hidden;
+    background-position: center;
+    padding: 300px;
+    background-size: cover; 
+    height: 500px;
+    font-size: large;
+    text-align: left;
+    border-radius: 5px;
+}
+.organico {
+    background-image: url(images/cafe-organico-molido-1.jpg);
+    position: relative;
+    overflow: hidden;
+    background-position: center;
+    padding: 300px;
+    background-size: cover; 
+    height: 500px;
+    font-size: large;
+    text-align: left;
+    border-radius: 5px;
+}
+.Mulato {
+    background-image: url(images/renders2-removebg-preview.png);
+    position: relative;
+    overflow: hidden;
+    background-position: center;
+    padding: 300px;
+    background-size: cover; 
+    height: 500px;
+    font-size: large;
+    text-align: left;
+    border-radius: 5px;
+}
+.cascada {
+    background-image: url(images/delacascada.jpeg);
+    position: relative;
+    overflow: hidden;
+    background-position: center;
+    padding: 300px;
+    background-size:contain; 
+    height: 500px;
+    font-size: large;
+    text-align: left;
+    border-radius: 5px;
 }
 .price {
     font-size: 1.2em;
